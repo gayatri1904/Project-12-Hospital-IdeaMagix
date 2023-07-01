@@ -1,115 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aafiya Mediretreats</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<html>
+  <head>
+    <title>Hospital Login</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .error-msg {
+        color: red;
+        margin-top: 10px;
+        text-align: left;
+        font-family: sans-serif;
+      }
+      .login-bg {
+        width: 100%;
+        height: 102vh;
+        margin-top: -10px;
+        margin-left: -10px;
+      }
+      .login-form-outer {
+        background-color: #eff3fc;
+        padding: 50px;
+        width: 35%;
+      }
+      .login-head {
+        color: black;
+        font-family: sans-serif;
+        font-size: 2rem;
+        margin-bottom: 50px;
+      }
+      .form-label{
+        font-size: 16px;
+        font-family: sans-serif;
+        color: dimgray;
+        margin-top: 20px;
+      }
+      .form-input{
+        width: 98%;
+        height: 40px;
+        border: none;
+        background: white;
+        border-radius: 5px;
+        padding-left: 10px;
+        font-size: 15px;
+        box-shadow: 0px 0px 2px gray;
+      }
+      .form-input:focus{
+        outline: none;
+        border: none;
+      }
+      .form-btn{
+        width: 100%;
+        height: 45px;
+        border-radius: 5px;
+        border: none;
+        background: #055ab1;
+        color: white;
+        font-size: 18px;
+        box-shadow: 0px 0px 2px gray;
+        cursor: pointer;
+      }
+      .company-name{
+        display: flex;
+        position: absolute;
+        color: white;
+        font-size: 3rem;
+        top: 200px;
+        margin-left: 50px;
+        font-family: sans-serif;
+      }
+      .company-sub{
+        display: flex;
+        position: absolute;
+        color: white;
+        font-size: 2rem;
+        top: 250px;
+        margin-left: 50px;
+        font-family: sans-serif;
+        color: darkorange;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: flex">
+      <div style="width: 65%;">
+        <img src="./images/login-bg.png" alt class="login-bg" />
+        <h1 class="company-name">Aafiya Mediretreats</h1>
+        <h5 class="company-sub">Healing Globally...</h5>
+      </div>
+      <div class="login-form-outer">
+        <center><img src="./images/company-logo.jpg" alt="" style="margin-bottom: 20px;"></center>
+        <h1 class="login-head">Login</h1>
+        <form
+          id="loginForm"
+          action="main.html"
+          onsubmit="return validateForm()"
+        >
+          <p class="form-label">Email</p>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter your email"
+            class="form-input"
+          />
+          <br />
+          <p class="form-label">Password</p>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            class="form-input"
+          />
+          <br />
+          <p id="errorMsg" class="error-msg"></p><br>
+          <input type="submit" value="Login" class="form-btn"/>
+        </form>
+      </div>
+    </div>
+
     <script>
-        $(function() {
-           $("#includeNavbar").load("navbar.html");
-        });
-        $(function() {
-            $("#includeHome").load("home.html");
-         });
-         $(function() {
-            $("#includeContent").load("content.html");
-         });
-         $(function() {
-            $("#includeDoctors").load("doctors.html");
-         });
-         $(function() {
-            $("#includeHospitals").load("hospitals.html");
-         });
-         $(function() {
-            $("#includeFooter").load("footer.html");
-         });
-     </script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light navbar-index" style="background-color: white;padding: 10px 50px;">
-        <img src="./images/company-logo.jpg" alt="" class="home-logo">
-        <div class="lang-menu lang-menu-mob">
-            <div class="selected-lang">
-                <p style="margin:0;margin-left: 5px;">English</p>
-                <img src="https://cdn-icons-png.flaticon.com/128/57/57055.png" alt="" style="width: 15px;margin-left: 5px;"/>
-            </div>
-            <ul>
-                <li>
-                    <a href="#" class="de">German</a>
-                </li>
-                <li>
-                    <a href="" class="en">English</a>
-                </li>
-                <li>
-                    <a href="" class="fr">French</a>
-                </li>
-            </ul>
-            
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="navbar-nav mr-auto home-nav" style="width: 100%;">
-            <li class="nav-item active">
-              <img src="./images/logo.png" alt="" class="home-second-logo">
-            </li>
-            <li class="nav-item">
-                <div class="home-nav-div">
-                    <img src="./images/mess-icon.png" alt="" class="home-mess-icon">
-                    <div style="margin-left: 10px;">
-                        <p class="home-div-head">Second Medical Opinion</p>
-                        <p class="home-div-text">Book Consultation</p>
-                    </div>
-                </div>    
-            </li>
-            <li class="nav-item">
-                <div class="home-nav-div">
-                    <img src="./images/call-icon.png" alt="" class="home-mess-icon">
-                    <div style="margin-left: 10px;">
-                        <p class="home-div-head">Call Us On</p>
-                        <p class="home-div-text">985&nbsp896&nbsp22222</p>
-                    </div>
-                </div>    
-            </li>
-            <li class="nav-item">
-                <div class="home-nav-div">
-                    <img src="./images/mail-icon.png" alt="" class="home-mess-icon">
-                    <div style="margin-left: 10px;">
-                        <p class="home-div-head">Email Us On</p>
-                        <p class="home-div-text">info@mediretreats.com</p>
-                    </div>
-                </div>    
-            </li>
-            <div class="lang-menu">
-                <div class="selected-lang">
-                    <p style="margin:0;margin-left: 5px;" class="selected-lang-name">English</p>
-                    <img src="https://cdn-icons-png.flaticon.com/128/57/57055.png" alt="" style="width: 15px;margin-left: 5px;" class="down-icon"/>
-                </div>
-                <ul>
-                    <li>
-                        <a href="#" class="de">German</a>
-                    </li>
-                    <li>
-                        <a href="" class="en">English</a>
-                    </li>
-                    <li>
-                        <a href="" class="fr">French</a>
-                    </li>
-                </ul>
-                
-            </div>
-          </ul>
-        </div>
-      </nav>  
-      <div id="includeNavbar"></div>
-      <div id="includeHome"></div>
-      <div id="includeContent"></div>
-      <div id="includeDoctors"></div>
-      <div id="includeHospitals"></div>
-      <div id="includeFooter"></div>
-</body>
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+
+        if (username === "" || password === "") {
+          document.getElementById("errorMsg").innerHTML =
+            "Please enter email and password.";
+          return false;
+        } else if (
+          username === "gayatri@gmail.com" &&
+          password === "gayatri123"
+        ) {
+          return true;
+        } else {
+          document.getElementById("errorMsg").innerHTML =
+          "Invalid Credentials";
+          return false;
+        }
+      }
+    </script>
+  </body>
 </html>
