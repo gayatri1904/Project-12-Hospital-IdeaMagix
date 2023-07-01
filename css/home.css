@@ -1,0 +1,32 @@
+.home-cover-image{
+    width: 100%;
+    background: url('/images/cover-image.png');
+    height: 320px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+.home-path-div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 32%;
+    align-items: center;
+}
+.home-cover-head{
+    color: white;
+    font-weight: 600;
+}
+.home-cover-para{
+    color: white;
+    width: 40%;
+    font-size: 17px;
+}
+.home-cover-btn{
+    width: 200px;
+    height: 45px;
+    background: #53acf0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+}

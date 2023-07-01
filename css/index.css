@@ -1,0 +1,157 @@
+.home-logo{
+    width: 200px;
+    margin-right: 60px;
+}
+.home-second-logo{
+    width: 50px;
+}
+.home-mess-icon{
+    width: 35px;
+    height: 35px;
+}
+.home-nav-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.home-div-head{
+    color: darkgray;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-family: unset;
+    font-weight: 600;
+}
+.home-div-text{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: unset;
+}
+.home-nav{
+    justify-content: space-between;
+    width: 100%;
+}
+.selected-lang{
+    font-size: 18px !important;
+    font-weight: 500 !important;
+}
+.lang-menu {
+    text-align: right;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    display: flex;
+    z-index: 99;
+}
+.lang-menu .selected-lang {
+    display: flex;   
+    justify-content: space-between;
+    line-height: 2;
+    cursor: pointer;
+    align-items: center;
+}
+.lang-menu .selected-lang:before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/555/555417.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.lang-menu-mob{
+    display: none;
+}
+.lang-menu ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    background-color: #fff;
+    border: 1px solid #f8f8f8;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 125px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+.lang-menu ul li {
+    list-style: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-menu ul li a {
+    text-decoration: none;
+    width: 125px;
+    padding: 5px 10px;
+    display: block;
+}
+
+.lang-menu ul li:hover {
+    background-color: #f2f2f2;
+}
+
+.lang-menu ul li a:before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.de:before {
+    background-image: url(https://cdn-icons-png.flaticon.com/128/5111/5111767.png);
+}
+
+.en:before {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/555/555417.png);
+}
+.fr:before {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/5327/5327282.png);
+}
+
+
+
+.lang-menu:hover ul {
+    display: block;
+}
+
+@media (max-width:600px) {
+    .lang-menu-mob{
+        display: block;
+    }
+    .home-logo{
+        width: 160px;
+        margin: 0;
+    }
+    .selected-lang-name{
+        display: none;
+    }
+    .down-icon{
+        width: 10px !important;
+        height: 10px !important;
+    }
+    .lang-menu .selected-lang:before{
+        width: 35px;
+    }
+    .navbar-index{
+        padding: 10px !important;
+    }
+    .navbar-toggler{
+        border: none !important;
+    }
+    .navbar-light .navbar-toggler-icon{
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    }
+    .navbar-nav{
+        padding-left: 0 !important;
+    }
+}

@@ -1,0 +1,50 @@
+.hospitals-outer-div{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+.hospital-card{
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    border: 0.09rem dashed red;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.hospital-card-outer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.carousel-hospital .carousel-indicators{
+    top: 95%;
+    width: 88%;
+    height: 20px;
+}
+.hospital-deg{
+    color: red;
+    font-style: italic;
+    font-weight: 600;
+}
+.hospital-loc{
+    font-size: 18px;
+    font-weight: 700;
+}
+.hospital-end{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+@media (max-width:600px) {
+    .carousel-hospital .carousel-indicators{
+        width: 100%;
+    }
+    .hospital-card:nth-child(1){
+        display: none;
+    }
+    .hospital-card:nth-child(2){
+        display: none;
+    }
+}

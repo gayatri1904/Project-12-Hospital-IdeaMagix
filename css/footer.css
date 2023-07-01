@@ -1,0 +1,243 @@
+.getintouch-div {
+  background: url(/images/footer-upper.png);
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 250px;
+  background-position: center;
+}
+.getintouch-inner-div {
+  display: flex;
+  justify-content: center;
+}
+.getintouch-button {
+  width: 180px;
+  height: 40px;
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.mob-number {
+  text-align: center;
+  margin-top: 6px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.line-div {
+  border-left: 1px solid;
+  height: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.getintouch-subhead {
+  color: white;
+  font-size: 20px;
+  padding-top: 70px;
+}
+.footer-outer {
+  display: flex;
+  width: 96%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.getintouch-head {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.footer-outer {
+  display: flex;
+  color: white;
+  background-color: #0b2432;
+  padding: 50px;
+  width: 100%;
+}
+.important-link-head {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.tophospital-head {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.spcilitytreat-head {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.medical-head {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.join-medi-div {
+    width: 300px;
+    height: 130px;
+    background-color: white;
+    margin-top: -95px;
+    border-radius: 7px;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 60px;
+}
+.aboutus-text {
+  width: 500px;
+}
+.image-logo {
+  width: 50px;
+  height: 50px;
+}
+.join-head {
+  color: dimgray;
+}
+.join-subhead {
+  color: black;
+  font-size: 18px;
+  margin-top: -10px;
+}
+.lorem-text {
+  color: gray;
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.footer-end {
+  background-color: #0b2432;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  margin: auto;
+  margin-top: 20px;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+.aboutus-head {
+    color: white;
+    font-size: 24px;
+    font-weight: bolder;
+}
+.aboutus-div{
+    width: 50%;
+}
+.aboutus-text {
+  color: white;
+  width: 100%;
+  text-align: justify;
+}
+.footer-social{
+    width:30px;
+    height: 30px;
+}
+.footer-social:hover{
+    transform: translateY(-5px);
+}
+.cs{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 700;
+}
+.f-mn{
+    font-size: 16px;
+    font-weight: bold;
+    color: #53acf0;
+    margin-top: -15px;
+}
+.footer-contact-symbol {
+  color: white;
+}
+.footer-logo{
+    width: 330px;
+    height: 120px;
+}
+.copyright {
+  display: flex;
+  background-color: #53acf0;
+  justify-content: space-between;
+  padding: 15px 50px;
+  height: 50px;
+}
+.terms {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.privacy-text {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer-last {
+    width: max-content;
+    color: white;
+    font-size: 15px;
+    width: 80%;
+    font-weight: 600;
+}
+.important-link{
+    line-height: 15px;
+}
+.Top-Hospital{
+    line-height: 15px;
+}
+.Specility-Treatments{
+    line-height: 15px;
+}
+.Medicat-Tourisam-Destination{
+    line-height: 15px;
+}
+
+@media (max-width:600px) {
+    .getintouch-subhead{
+        font-size: 13px;
+    }
+    .getintouch-head{
+        font-size: 20px;
+    }
+    .getintouch-button{
+        width: 150px;
+    }
+    .mob-number{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .footer-outer{
+        padding: 15px;
+    }
+    .important-link{
+        width: 180px;
+    }
+    .important-link p{
+        font-size: 13px;
+    }
+    .important-link p:first-child{
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .important-link-head{
+        font-size: 15px !important;
+        line-height: 20px;
+    }
+    .aboutus-div{
+        width: 100%;
+    }
+    .join-medi-div{
+        display: none !important;
+    }
+    .copyright{
+        padding: 10px 10px;
+    }
+    .footer-last{
+        font-size: 10px;
+    }
+    .terms{
+        font-size: 10px;
+    }
+    .privacy-text{
+        font-size: 10px;
+    }
+}
