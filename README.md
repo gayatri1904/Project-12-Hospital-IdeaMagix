@@ -30,3 +30,7 @@ As a project received from IdeaMagix, I have developed the design of the website
 
 <b>Drawback</b>
 Sorry due to time issue I cannot connnect it to database using Node Js. As yesterday my grandfather got expired so I was not able to work to the project. But still I have designed the website exactly similar to the reference. Please look for my consideration.
+
+<b>Login Credentials</b><br>
+<b>email</b> - gayatri@gmail.com<br>
+<b>password</b> - gayatri123
